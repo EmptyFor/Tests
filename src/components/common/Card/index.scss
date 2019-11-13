@@ -1,0 +1,72 @@
+.card-wrapp {
+  min-width: 390px;
+  width: 30%;
+  min-height: 400px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  position: relative;
+  margin-inline-end: 2%;
+  margin-inline-start: 2%;
+
+  .content-text {
+    font-size: 13px;
+    font-family: "Metropolis-ExtraLight Italic";
+    line-height: 1.4;
+  }
+
+  .between-line {
+    font-size: 46px;
+    display: flex;
+    color: rgba(143, 99, 5, 0.425);
+    position: relative;
+    padding: 0 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      min-width: 120px;
+      width: 160px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.253);
+      display: block;
+      position: absolute;
+      top: 65%;
+      margin-top: -3px;
+    }
+
+    &::after {
+      right: 65px;
+    }
+    &::before {
+      left: 65px;
+    }
+  }
+
+  .people-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 64px;
+
+    .card-img {
+      margin-right: auto;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.589);
+    }
+
+    .info-text {
+      width: 70%;
+      justify-content: space-evenly;
+      display: flex;
+      height: 65px;
+      flex-direction: column;
+    }
+  }
+}

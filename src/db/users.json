@@ -1,0 +1,26 @@
+{
+    "users": [
+        {
+            "unique": "user_1",
+            "login": "FA_user_001",
+            "password": "qwerty123",
+            "first_name": "Donald",
+            "last_name": "Trumph",
+            "activity": {
+                "last_connection": "23.04.1999 22:55:12",
+                "closed_position": "10"
+            }
+        },
+        {
+            "unique": "user_2",
+            "login": "FA_user_002",
+            "password": "qwerty123",
+            "first_name": "Julia",
+            "last_name": "Roberts",
+            "activity": {
+                "last_connection": "22.04.1999 16:11:52",
+                "closed_position": "0"
+            }
+        }
+    ]
+}

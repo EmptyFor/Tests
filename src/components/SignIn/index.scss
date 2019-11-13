@@ -1,0 +1,12 @@
+.sign-in {
+  height: 50vh !important;
+}
+
+.name-wrapp {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  .arch-default-input {
+    width: 150px;
+  }
+}

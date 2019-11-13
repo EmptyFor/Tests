@@ -1,0 +1,52 @@
+.arch-input-wrapp {
+    position: relative;
+    text-align: left;
+    display: flex;
+    width: auto;
+  
+    .arch-default-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      width: 320px;
+      padding: 0 6%;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.459);
+      margin-block-start: 5%;
+      margin-block-end: 5%;
+      color: rgb(9, 0, 56);
+      letter-spacing: 1.2px;
+      z-index: 10;
+      background: none;
+      font-family: 'Metropolis-Light';
+    }
+  
+    .placeholder-label {
+      position: absolute;
+      font-size: 15px;
+      left: 10%;
+      top: 39%;
+      transition: 0.25s;
+      color: rgba(0, 0, 0, 0.466);
+      user-select: none;
+      font-family: 'Metropolis-Regular';
+    }
+  
+    .arch-default-input:focus {
+      border: 1.2px solid rgba(30, 66, 1, 0.829);
+    }
+  
+    .arch-default-input:focus ~ .placeholder-label,
+    .arch-default-input:valid + .placeholder-label {
+      font-weight: 540;
+      padding: 0 1%;
+      top: 6%;
+      left: 6%;
+      z-index: 10;
+      background: white;
+      color: rgba(30, 66, 1, 0.829);
+    }
+  }
+  

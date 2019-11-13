@@ -1,0 +1,39 @@
+.first-section {
+  min-height: 100vh;
+  padding-top: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  // background: linear-gradient(to right, rgba(102, 51, 153, 0.5), rgba(137, 110, 165,0.5));
+
+  .welcome-title {
+    font-size: 40px;
+    font-family: "Metropolis-SemiBold";
+    padding: 4.5%;
+    color: rgb(0, 0, 0);
+  }
+
+  .wave-bg {
+    width: 100%;
+    max-height: 25vh;
+    display: flex;
+    // position: absolute;
+    bottom: 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    padding: 3%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+
+    .info-text {
+      line-height: 1.6;
+      font-size: 22px;
+      font-family: "Avenir-Next";
+    }
+  }
+}
