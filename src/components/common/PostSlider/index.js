@@ -4,6 +4,7 @@ import Card from '../Card';
 import posts from '../../../db/posts'
 
 import './index.scss'
+import SliderButton from '../Buttons/SliderButton';
 
 
 
@@ -24,8 +25,12 @@ export default class PostSlider extends Component {
 
 
         return (
-            <div className="slider-wrapp">
-                {this.renderCardContent()}
+            <div className="slider">
+                <SliderButton type="prev" />
+                <div className="slider-wrapp">
+                    {this.renderCardContent()}
+                </div>
+                <SliderButton type="next" />
             </div>
         )
     }

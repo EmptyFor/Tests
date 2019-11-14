@@ -1,0 +1,106 @@
+.arch-circle-btn {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 50%;
+    color: white;
+    background: #000;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 1s;
+  
+    .arch-circle-btn-arrow {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 3px;
+    }
+  
+    .arch-circle-btn-arrow::before,
+    .arch-circle-btn-arrow::after {
+      position: absolute;
+      content: "";
+      width: 70%;
+      height: 3px;
+      margin-top: -21%;
+      background: rgb(255, 255, 255);
+      transition-duration: 0.5s;
+      margin-left: 70%;
+    }
+    .arch-circle-btn-arrow::after {
+      margin-top: 24%;
+    }
+  }
+  
+  .arch-circle-btn:hover {
+    background: rgba(0, 0, 0, 0.795);
+  }
+  
+  .next {
+    .arch-circle-btn-arrow::before,
+    .arch-circle-btn-arrow::after {
+      position: absolute;
+      content: "";
+      width: 70%;
+      height: 3px;
+      margin-top: -21%;
+      background: rgb(255, 255, 255);
+      transition-duration: 0.5s;
+      margin-left: 70%;
+    }
+    .arch-circle-btn-arrow::after {
+      margin-top: 24%;
+    }
+  }
+  
+  .prev {
+    .arch-circle-btn-arrow::before,
+    .arch-circle-btn-arrow::after {
+      position: absolute;
+      content: "";
+      width: 70%;
+      height: 3px;
+      margin-top: -21%;
+      background: rgb(255, 255, 255);
+      transition-duration: 0.5s;
+      margin-left: 65%;
+      transform: rotate(-45deg);
+    }
+    .arch-circle-btn-arrow::after {
+      margin-top: 24%;
+      transform: rotate(45deg);
+    }
+  }
+  
+  .plus {
+    .arch-circle-btn-arrow::before,
+    .arch-circle-btn-arrow::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      height: 3px;
+      margin-top: -2.5%;
+      background: rgb(255, 255, 255);
+      transition-duration: 0.5s;
+      margin-left: 63%;
+    }
+    .arch-circle-btn-arrow::after {
+      margin-top: 0.5%;
+      transform: rotate(90deg);
+    }
+  }
+  
+  .plus:hover {
+    .arch-circle-btn-arrow::before,
+    .arch-circle-btn-arrow::after {
+      transition-duration: 0.5s;
+      transform: rotate(360deg);
+    }
+    .arch-circle-btn-arrow::after {
+      transform: rotate(450deg);
+    }
+  }

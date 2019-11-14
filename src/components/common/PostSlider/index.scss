@@ -1,8 +1,15 @@
-.slider-wrapp {
-  position: absolute;
+.slider {
+  height: auto;
+  position: relative;
   min-height: 50vh;
-  width: 100%;
+  max-width: 100%;
   display: flex;
-  align-items: center;
-  padding-left: 3%;
+  .slider-wrapp {
+    // position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+  }
 }
